@@ -15,3 +15,6 @@ to un(in)stall
 
 -updateAll to yes update All installed apps (as far as the installed IM version allows).
 note most of the time this will not move you to a newer major version.
+
+
+/showVerboseProgress if you need to see what is going on/wrong
