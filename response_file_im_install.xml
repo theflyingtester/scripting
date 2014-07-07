@@ -1,0 +1,43 @@
+recorded with 
+sudo ./install -log iminstall.log -record response_file_im_install.xml
+use
+
+for playback
+
+
+
+<?xml version='1.0' encoding='UTF-8'?>
+<agent-input>
+  <server>
+    <repository location='/tmp/installerRepository6090374456496264131.tmp'/>
+    <repository location='/home/nl073504/Downloads/agent.installer.linux.gtk.x86_64_1.7.2000.20140227_0303'/>
+  </server>
+  <profile id='IBM Installation Manager' installLocation='/opt/ibm/InstallationManager/eclipse' kind='self'>
+    <data key='eclipseLocation' value='/opt/ibm/InstallationManager/eclipse'/>
+    <data key='user.import.profile' value='false'/>
+    <data key='cic.selector.os' value='linux'/>
+    <data key='cic.selector.arch' value='x86_64'/>
+    <data key='cic.selector.ws' value='gtk'/>
+    <data key='cic.selector.nl' value='de,no,fi,ru,hr,fr,hu,sk,sl,sv,ko,el,en,pt_BR,it,iw,zh,es,cs,ar,zh_HK,zh_TW,th,ja,pl,da,tr,nl'/>
+  </profile>
+  <install modify='false'>
+    <!-- IBM® Installation Manager 1.7.2 -->
+    <offering profile='IBM Installation Manager' id='com.ibm.cic.agent' version='1.7.2000.20140227_0303' features='agent_core,agent_jre' installFixes='none'/>
+  </install>
+  <preference name='com.ibm.cic.common.core.preferences.connectTimeout' value='30'/>
+  <preference name='com.ibm.cic.common.core.preferences.readTimeout' value='45'/>
+  <preference name='com.ibm.cic.common.core.preferences.downloadAutoRetryCount' value='0'/>
+  <preference name='offering.service.repositories.areUsed' value='true'/>
+  <preference name='com.ibm.cic.common.core.preferences.ssl.nonsecureMode' value='false'/>
+  <preference name='com.ibm.cic.common.core.preferences.http.disablePreemptiveAuthentication' value='false'/>
+  <preference name='http.ntlm.auth.kind' value='NTLM'/>
+  <preference name='http.ntlm.auth.enableIntegrated.win32' value='true'/>
+  <preference name='com.ibm.cic.common.core.preferences.preserveDownloadedArtifacts' value='true'/>
+  <preference name='com.ibm.cic.common.core.preferences.keepFetchedFiles' value='false'/>
+  <preference name='PassportAdvantageIsEnabled' value='false'/>
+  <preference name='com.ibm.cic.common.core.preferences.searchForUpdates' value='false'/>
+  <preference name='com.ibm.cic.agent.ui.displayInternalVersion' value='false'/>
+  <preference name='com.ibm.cic.common.sharedUI.showErrorLog' value='true'/>
+  <preference name='com.ibm.cic.common.sharedUI.showWarningLog' value='true'/>
+  <preference name='com.ibm.cic.common.sharedUI.showNoteLog' value='true'/>
+</agent-input>
