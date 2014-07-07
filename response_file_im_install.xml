@@ -1,8 +1,11 @@
-recorded with 
-sudo ./install -log iminstall.log -record response_file_im_install.xml
-use
+download IM repo from jazz.net
+unpack and find install script.
 
-for playback
+This xml response file was recorded with the options:
+sudo ./install -log iminstall.log -record response_file_im_install.xml
+
+use it for playback for a silent install of IM itself:
+
 
 
 
