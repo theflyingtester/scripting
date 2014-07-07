@@ -1,0 +1,13 @@
+
+
+-record xml file name 
+used to create the sml response file taht can be used for a silent installation
+
+-silent 
+used to run im in silent headless mode. 
+for this to work you want to use 
+-acceptLicense to get over nagging questions
+and
+-input  xml response file
+to specify the applications you want 
+to un(in)stall
