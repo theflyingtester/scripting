@@ -1,7 +1,8 @@
 
 
 -record xml file name 
-used to create the sml response file taht can be used for a silent installation
+used to create the sml response file that can be used for a silent installation
+see the files marked response_file_ in this list.
 
 -silent 
 used to run im in silent headless mode. 
