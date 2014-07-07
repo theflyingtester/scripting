@@ -1,0 +1,46 @@
+created a recording with 
+sudo ./launcher -record response_file_rtc_client_install.xml
+
+
+<?xml version='1.0' encoding='UTF-8'?>
+<agent-input>
+  <variables>
+    <variable name='sharedLocation' value='/opt/IBM/IBMIMShared'/>
+  </variables>
+  <server>
+    <repository location='/home/nl073504/Downloads/im/repo/rtc-client-full-p2-offering/offering-repo'/>
+    <repository location='http://public.dhe.ibm.com/software/rationalsdp/jazz/rtc/v5/com.ibm.team.install.rtc.client.eclipse.ies4/updates/'/>
+    <repository location='http://public.dhe.ibm.com/software/rationalsdp/jazz/rtc/v5/com.ibm.team.install.rtc.client.eclipse.ies4/extensions/'/>
+  </server>
+  <profile id='IBM Rational Team Concert Client' installLocation='/opt/ibm/RTC'>
+    <data key='eclipseLocation' value='/opt/ibm/RTC'/>
+    <data key='user.import.profile' value='false'/>
+    <data key='cic.selector.os' value='linux'/>
+    <data key='cic.selector.arch' value='x86_64'/>
+    <data key='cic.selector.ws' value='gtk'/>
+    <data key='cic.selector.nl' value='en'/>
+    <data key='user.help.option' value='remote'/>
+    <data key='user.help.url' value=''/>
+  </profile>
+  <install modify='false'>
+    <!-- Rational Team Concert - Client for Eclipse 4.2.x IDE 5.0 -->
+    <offering profile='IBM Rational Team Concert Client' id='com.ibm.team.install.rtc.client.eclipse.ies4' version='5.0.0.RTC-I20140509-1417-r50' features='teamconcert.client.core,jdk,teamconcert.client.scmtools,teamconcert.client.shortcuts,teamconcert.client.sametime' installFixes='none'/>
+  </install>
+  <preference name='com.ibm.cic.common.core.preferences.eclipseCache' value='${sharedLocation}'/>
+  <preference name='com.ibm.cic.common.core.preferences.connectTimeout' value='30'/>
+  <preference name='com.ibm.cic.common.core.preferences.readTimeout' value='45'/>
+  <preference name='com.ibm.cic.common.core.preferences.downloadAutoRetryCount' value='0'/>
+  <preference name='offering.service.repositories.areUsed' value='true'/>
+  <preference name='com.ibm.cic.common.core.preferences.ssl.nonsecureMode' value='false'/>
+  <preference name='com.ibm.cic.common.core.preferences.http.disablePreemptiveAuthentication' value='false'/>
+  <preference name='http.ntlm.auth.kind' value='NTLM'/>
+  <preference name='http.ntlm.auth.enableIntegrated.win32' value='true'/>
+  <preference name='com.ibm.cic.common.core.preferences.preserveDownloadedArtifacts' value='false'/>
+  <preference name='com.ibm.cic.common.core.preferences.keepFetchedFiles' value='false'/>
+  <preference name='PassportAdvantageIsEnabled' value='false'/>
+  <preference name='com.ibm.cic.common.core.preferences.searchForUpdates' value='true'/>
+  <preference name='com.ibm.cic.agent.ui.displayInternalVersion' value='false'/>
+  <preference name='com.ibm.cic.common.sharedUI.showErrorLog' value='true'/>
+  <preference name='com.ibm.cic.common.sharedUI.showWarningLog' value='true'/>
+  <preference name='com.ibm.cic.common.sharedUI.showNoteLog' value='true'/>
+</agent-input>
